@@ -1,0 +1,1 @@
+let customers= ["name", "email",["purchase1", "purchase2", "purchase3"]];
