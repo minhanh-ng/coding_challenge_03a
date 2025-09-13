@@ -15,3 +15,5 @@ customers[1].email = "chimmie@gmail.com";
 customers[2].purchases.push("Hot Chocolate");
 
 console.log(customers)
+
+customers.forEach(item => console.log(`Customer Name: ${item.name} | Email: ${item.email} | Purchases: ${item.purchases}`));
