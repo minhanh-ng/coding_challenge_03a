@@ -4,16 +4,17 @@ const customers= [
     {name: "Dankey", email: "dankey@email.com", purchases: ["Ramen", "Chips", "Matcha"]}
 ];
 
-customers.push(
-    {name: "Cinnamoroll", email: "cinnamoroll@email.com", purchases:["Honey", "Nutella", "Strawberry"]}
-);
+const newCustomer = {name: "Cinnamoroll", email: "cinnamoroll@email.com", purchases:["Honey", "Nutella", "Strawberry"]};
+customers.push(newCustomer);
+console.log("Added customer: ", `${newCustomer.name} | ${newCustomer.email} | ${newCustomer.purchases}`);
 
-customers.shift();
+
+const removedCustomer = customers.shift();
+console.log("Removed customer: ", `${removedCustomer.name} | ${removedCustomer.email} | ${removedCustomer.purchases}`)
 
 customers[1].email = "chimmie@gmail.com";
 
 customers[2].purchases.push("Hot Chocolate");
 
-console.log(customers)
 
 customers.forEach(item => console.log(`Customer Name: ${item.name} | Email: ${item.email} | Purchases: ${item.purchases}`));
