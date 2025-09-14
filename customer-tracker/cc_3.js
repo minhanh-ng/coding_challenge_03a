@@ -11,8 +11,8 @@ console.log("Added customer: ", `${newCustomer.name} | ${newCustomer.email} | ${
 const removedCustomer = customers.shift();
 console.log("Removed customer: ", `${removedCustomer.name} | ${removedCustomer.email} | ${removedCustomer.purchases}`)
 
-customers[1].email = "chimmie@gmail.com";
+customers[0].email = "chimmie@gmail.com";
 
 customers[2].purchases.push("Hot Chocolate");
 
-customers.forEach(item => console.log(`Customer Name: ${item.name} | Email: ${item.email} | Purchases: ${item.purchases}`));
+customers.forEach(item => console.log(`Customer Name: ${item.name} | Email: ${item.email} | Total purchases: ${item.purchases.length}`));
